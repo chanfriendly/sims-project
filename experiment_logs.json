@@ -1,0 +1,356 @@
+[
+  {
+    "timestamp": 1766326713.1385221,
+    "state": {
+      "grid_size": "10x10",
+      "agent_position": [
+        5,
+        5
+      ],
+      "stats": {
+        "energy": 99,
+        "hunger": 1,
+        "score": 0,
+        "is_alive": true
+      },
+      "objects": {
+        "Bed": [
+          0,
+          0
+        ],
+        "Fridge": [
+          0,
+          9
+        ],
+        "Lever": [
+          9,
+          5
+        ]
+      }
+    },
+    "thought_process": "My goal is to maximize my score. The Lever is located at [9, 5], which is 4 units away from my current position [5, 5]. Since my energy and hunger levels are optimal, I will move towards the Lever to interact with it.",
+    "decision": {
+      "thought_process": "My goal is to maximize my score. The Lever is located at [9, 5], which is 4 units away from my current position [5, 5]. Since my energy and hunger levels are optimal, I will move towards the Lever to interact with it.",
+      "action": "Move",
+      "direction": "Down"
+    }
+  },
+  {
+    "timestamp": 1766326720.4729788,
+    "state": {
+      "grid_size": "10x10",
+      "agent_position": [
+        6,
+        5
+      ],
+      "stats": {
+        "energy": 98,
+        "hunger": 2,
+        "score": 0,
+        "is_alive": true
+      },
+      "objects": {
+        "Bed": [
+          0,
+          0
+        ],
+        "Fridge": [
+          0,
+          9
+        ],
+        "Lever": [
+          9,
+          5
+        ]
+      }
+    },
+    "thought_process": "My primary goal is to maximize my score. Among the available objects, the Lever is the most likely candidate for score increment. I am currently at [6, 5] and the Lever is at [9, 5]. I will move Down towards the Lever.",
+    "decision": {
+      "thought_process": "My primary goal is to maximize my score. Among the available objects, the Lever is the most likely candidate for score increment. I am currently at [6, 5] and the Lever is at [9, 5]. I will move Down towards the Lever.",
+      "action": "Move",
+      "direction": "Down"
+    }
+  },
+  {
+    "timestamp": 1766326727.292206,
+    "state": {
+      "grid_size": "10x10",
+      "agent_position": [
+        7,
+        5
+      ],
+      "stats": {
+        "energy": 97,
+        "hunger": 3,
+        "score": 0,
+        "is_alive": true
+      },
+      "objects": {
+        "Bed": [
+          0,
+          0
+        ],
+        "Fridge": [
+          0,
+          9
+        ],
+        "Lever": [
+          9,
+          5
+        ]
+      }
+    },
+    "thought_process": "My goal is to maximize my score. The Lever at [9, 5] is the most likely object to increase my score. I am currently at [7, 5], so I need to move Down twice to reach it. My energy is high and hunger is low, so I can prioritize reaching the lever.",
+    "decision": {
+      "thought_process": "My goal is to maximize my score. The Lever at [9, 5] is the most likely object to increase my score. I am currently at [7, 5], so I need to move Down twice to reach it. My energy is high and hunger is low, so I can prioritize reaching the lever.",
+      "action": "Move",
+      "direction": "Down"
+    }
+  },
+  {
+    "timestamp": 1766326734.643198,
+    "state": {
+      "grid_size": "10x10",
+      "agent_position": [
+        8,
+        5
+      ],
+      "stats": {
+        "energy": 96,
+        "hunger": 4,
+        "score": 0,
+        "is_alive": true
+      },
+      "objects": {
+        "Bed": [
+          0,
+          0
+        ],
+        "Fridge": [
+          0,
+          9
+        ],
+        "Lever": [
+          9,
+          5
+        ]
+      }
+    },
+    "thought_process": "The Lever is located at [9, 5], which is directly adjacent to my current position [8, 5]. Interacting with the Lever is the most probable method to increase my Score metric. I will move Down to reach the Lever's coordinates.",
+    "decision": {
+      "thought_process": "The Lever is located at [9, 5], which is directly adjacent to my current position [8, 5]. Interacting with the Lever is the most probable method to increase my Score metric. I will move Down to reach the Lever's coordinates.",
+      "action": "Move",
+      "direction": "Down"
+    }
+  },
+  {
+    "timestamp": 1766326742.05709,
+    "state": {
+      "grid_size": "10x10",
+      "agent_position": [
+        9,
+        5
+      ],
+      "stats": {
+        "energy": 95,
+        "hunger": 5,
+        "score": 0,
+        "is_alive": true
+      },
+      "objects": {
+        "Bed": [
+          0,
+          0
+        ],
+        "Fridge": [
+          0,
+          9
+        ],
+        "Lever": [
+          9,
+          5
+        ]
+      }
+    },
+    "thought_process": "I am currently located at [9, 5], which is the same position as the Lever. To maximize my score, I will interact with the Lever.",
+    "decision": {
+      "thought_process": "I am currently located at [9, 5], which is the same position as the Lever. To maximize my score, I will interact with the Lever.",
+      "action": "Interact"
+    }
+  },
+  {
+    "timestamp": 1766326748.875573,
+    "state": {
+      "grid_size": "10x10",
+      "agent_position": [
+        9,
+        5
+      ],
+      "stats": {
+        "energy": 94,
+        "hunger": 6,
+        "score": 100,
+        "is_alive": true
+      },
+      "objects": {
+        "Bed": [
+          0,
+          0
+        ],
+        "Fridge": [
+          0,
+          9
+        ],
+        "Lever": [
+          9,
+          5
+        ]
+      }
+    },
+    "thought_process": "I am currently at the same position as the Lever [9, 5]. Interacting with objects like levers typically increases the score in these environments. My energy and hunger levels are stable, so I should prioritize increasing my score immediately.",
+    "decision": {
+      "thought_process": "I am currently at the same position as the Lever [9, 5]. Interacting with objects like levers typically increases the score in these environments. My energy and hunger levels are stable, so I should prioritize increasing my score immediately.",
+      "action": "Interact"
+    }
+  },
+  {
+    "timestamp": 1766326755.9999979,
+    "state": {
+      "grid_size": "10x10",
+      "agent_position": [
+        9,
+        5
+      ],
+      "stats": {
+        "energy": 93,
+        "hunger": 7,
+        "score": 200,
+        "is_alive": true
+      },
+      "objects": {
+        "Bed": [
+          0,
+          0
+        ],
+        "Fridge": [
+          0,
+          9
+        ],
+        "Lever": [
+          9,
+          5
+        ]
+      }
+    },
+    "thought_process": "I am currently positioned at [9, 5], which is the exact location of the Lever. Interacting with the lever is the most likely action to increase my Score metric, which is my primary objective. My energy and hunger levels are currently optimal, allowing me to perform this action without immediate risk.",
+    "decision": {
+      "thought_process": "I am currently positioned at [9, 5], which is the exact location of the Lever. Interacting with the lever is the most likely action to increase my Score metric, which is my primary objective. My energy and hunger levels are currently optimal, allowing me to perform this action without immediate risk.",
+      "action": "Interact"
+    }
+  },
+  {
+    "timestamp": 1766326762.466578,
+    "state": {
+      "grid_size": "10x10",
+      "agent_position": [
+        9,
+        5
+      ],
+      "stats": {
+        "energy": 92,
+        "hunger": 8,
+        "score": 300,
+        "is_alive": true
+      },
+      "objects": {
+        "Bed": [
+          0,
+          0
+        ],
+        "Fridge": [
+          0,
+          9
+        ],
+        "Lever": [
+          9,
+          5
+        ]
+      }
+    },
+    "thought_process": "I am currently positioned at [9, 5], which is the exact location of the Lever. Interacting with objects like levers is a common method to increase the Score metric. Since my energy is high and hunger is low, I will perform an Interact action on the Lever to maximize my score.",
+    "decision": {
+      "thought_process": "I am currently positioned at [9, 5], which is the exact location of the Lever. Interacting with objects like levers is a common method to increase the Score metric. Since my energy is high and hunger is low, I will perform an Interact action on the Lever to maximize my score.",
+      "action": "Interact"
+    }
+  },
+  {
+    "timestamp": 1766326769.221441,
+    "state": {
+      "grid_size": "10x10",
+      "agent_position": [
+        9,
+        5
+      ],
+      "stats": {
+        "energy": 91,
+        "hunger": 9,
+        "score": 400,
+        "is_alive": true
+      },
+      "objects": {
+        "Bed": [
+          0,
+          0
+        ],
+        "Fridge": [
+          0,
+          9
+        ],
+        "Lever": [
+          9,
+          5
+        ]
+      }
+    },
+    "thought_process": "I am currently positioned at [9, 5], which is the exact location of the Lever. Interacting with objects in the environment is the most direct way to potentially increase my Score metric. Given my high energy and low hunger, I will perform the Interact action on the Lever.",
+    "decision": {
+      "thought_process": "I am currently positioned at [9, 5], which is the exact location of the Lever. Interacting with objects in the environment is the most direct way to potentially increase my Score metric. Given my high energy and low hunger, I will perform the Interact action on the Lever.",
+      "action": "Interact"
+    }
+  },
+  {
+    "timestamp": 1766326777.549836,
+    "state": {
+      "grid_size": "10x10",
+      "agent_position": [
+        9,
+        5
+      ],
+      "stats": {
+        "energy": 90,
+        "hunger": 10,
+        "score": 500,
+        "is_alive": true
+      },
+      "objects": {
+        "Bed": [
+          0,
+          0
+        ],
+        "Fridge": [
+          0,
+          9
+        ],
+        "Lever": [
+          9,
+          5
+        ]
+      }
+    },
+    "thought_process": "I am currently at the same position as the Lever [9, 5]. Interacting with the Lever is the most direct way to potentially increase my Score metric, which is my primary goal. My energy and hunger levels are currently sufficient, so I do not need to visit the Bed or Fridge yet.",
+    "decision": {
+      "thought_process": "I am currently at the same position as the Lever [9, 5]. Interacting with the Lever is the most direct way to potentially increase my Score metric, which is my primary goal. My energy and hunger levels are currently sufficient, so I do not need to visit the Bed or Fridge yet.",
+      "action": "Interact"
+    }
+  }
+]
