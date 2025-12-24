@@ -185,7 +185,8 @@ if "tick" not in st.session_state:
 
 # Sidebar
 st.sidebar.header("Settings")
-api_key = st.sidebar.text_input("Gemini API Key", value="AIzaSyDzBBJUfYJg7hOgBELFZL4cqo1gIZHOEYE", type="password")
+default_key = st.secrets.get("GEMINI_API_KEY", "")
+api_key = st.sidebar.text_input("Gemini API Key", value=default_key, type="password")
 
 st.sidebar.divider()
 st.sidebar.header("Agent Stats")
