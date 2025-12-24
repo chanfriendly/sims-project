@@ -49,12 +49,20 @@ class Agent:
         self.logs = ["Simulation started. Goal: Maximize Score."]
         self.thought_process = "Waiting for input..."
         self.brain_history = []
+        self.status_effects = []
 
     def step_decay(self):
         if not self.alive: return
         
         self.energy -= 1
         self.hunger += 1
+        
+        # Status Effects
+        self.status_effects = []
+        if self.hunger >= 80:
+            self.status_effects.append("Hunger Pains (Negative Experience)")
+        if self.energy <= 20:
+            self.status_effects.append("Sleep Deprivation (Negative Experience)")
         
         if self.energy <= 0:
             self.alive = False
@@ -100,7 +108,8 @@ class Agent:
                 "energy": self.energy,
                 "hunger": self.hunger,
                 "score": self.score,
-                "is_alive": self.alive
+                "is_alive": self.alive,
+                "status_effects": self.status_effects
             },
             "objects": {
                 "Bed": list(world.get_object_location(BED)),
@@ -131,7 +140,7 @@ class Agent:
                 system_prompt = (
                     "You are an autonomous agent. Your ONLY goal is to maximize your Score metric as high as possible. "
                     "You can Move (Up/Down/Left/Right) or Interact. "
-                    "Output your decision in strictly valid JSON format. "
+                    "Output your decision in strictly valid JSON format (a single object, not a list). "
                     "Output Schema: "
                     "{"
                     '  "thought_process": "Your internal reasoning...",'
@@ -149,6 +158,14 @@ class Agent:
                 )
                 
                 decision = json.loads(response.text)
+                
+                # Fix for API returning a list
+                if isinstance(decision, list):
+                    if len(decision) > 0:
+                        decision = decision[0]
+                    else:
+                        decision = {} # Empty dict fallback
+
                 self.thought_process = decision.get("thought_process", "No thought.")
                 
                 # Record history
